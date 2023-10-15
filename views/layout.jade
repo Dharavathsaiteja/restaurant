@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Restaurant Food Ordering
+    link(rel='stylesheet', href='styles.css')
+  body
+    header
+      h1 Restaurant Name
+    nav
+      ul
+        li
+          a(href=' Home') Home
+        li
+          a(href=' Menu') Menu
+        li
+          a(href='Order') Order
+    main
+      section.menu
+        h2 Menu
+        //- Display restaurant menu items here
+        div.menu-item
+          h3 Pizza
+          p $10.99
+          img(src='https://static.toiimg.com/photo/51892394.cms', alt='Pizza Image') // Replace 'pizza.jpg' with your image file path
+          button Add to Cart
+        div.menu-item
+          h3 Burger
+          p $6.99
+          img(src='https://www.tastingtable.com/img/gallery/what-makes-restaurant-burgers-taste-different-from-homemade-burgers-upgrade/intro-1662064407.jpg', alt='Burger Image') // Replace 'burger.jpg' with your image file path
+          button Add to Cart
+        //- Add more menu items here
+      section.order
+        h2 Your Order
+        //- Display user's order and checkout functionality here
+        div.order-item
+          h3 Pizza
+          p $10.99
+          img(src='https://static.toiimg.com/photo/51892394.cms', alt='Pizza Image') // Replace 'pizza.jpg' with your image file path
+          button Remove
+        div.order-item
+          h3 Burger
+          p $6.99
+          img(src='https://www.tastingtable.com/img/gallery/what-makes-restaurant-burgers-taste-different-from-homemade-burgers-upgrade/intro-1662064407.jpg', alt='Burger Image') // Replace 'burger.jpg' with your image file path
+          button Remove
+        //- Add more order items here
+        div.total
+          p Total: $17.98
+        button Checkout
+    footer
+      p &copy; 2023 Restaurant Name
+  script(src='script.js')
+  

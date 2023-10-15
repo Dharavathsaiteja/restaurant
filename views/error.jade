@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Error
+  p An error occurred while processing your request.
+
+  if error.status
+    h2 Status Code: #{error.status}
+  if error.message
+    p Message: #{error.message}
+  if error.stack
+    pre Stack Trace:
+      code
+        #{error.stack}

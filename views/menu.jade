@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Menu
+  //- Loop through and display menu items here
+  each item in menuItems
+    div.menu-item
+      h3= item.name
+      p= `$${item.price.toFixed(2)}`
+      button Add to Cart
