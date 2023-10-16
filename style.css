@@ -47,3 +47,10 @@ footer {
     color: #fff;
     padding: 10px 0;
 }
+/* styles.css */
+/* Reduce the width and height of all images within the .menu-item and .order-item divs */
+.menu-item img,
+.order-item img {
+  width: 100px; /* Adjust to your preferred width */
+  height: auto; /* This maintains the aspect ratio */
+}
